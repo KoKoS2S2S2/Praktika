@@ -1,2 +1,1 @@
-# Praktika
-# Kazax, ЛЕМ и KoKoS2
+Booking Hotel
