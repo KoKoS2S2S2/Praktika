@@ -167,5 +167,27 @@ POST api/Hotels/{ID_Hotel:int32}, need authorization with user role;
 204 - noContent
 404 - NotFound
 401 – Unauthorized
-
+#### Создание Аккаунта(менеджер):
+##### PUT api/managers/registration; login, password;
+ 1. 201 – Created, модель User
+ 2. 406 - notAcceptable
+#### Вход в аккаунт:
+##### POST api/managers/authorization; login, password;
+ 1. 200 – Ok, модель User
+ 2. 404 – notFound
+#### Просмотр аккаунта:
+##### Get api/managers/{ID:int32};требуется авторизация в роли менеджера
+ 1. 200 – ok, модель Manager
+ 2. 404 – notFound
+ 3. 401 – unauthorized
+#### Изменение данных аккаунта:
+##### PUT api/managers/{ID:int32}; login, password; nтребуется авторизация в роли пользователя
+ 1. 200 – OK, модель User
+ 2. 404 – notFound
+ 3. 401 – unauthorized
+#### Удаление Аккаунта:
+##### Delete api/managers/{ID:int32}; требуется авторизация в роли Менеджера
+ 1. 204 – noContent
+ 2. 404 – notFound
+ 3. 401 - unauthorized
 <img src = https://i.imgur.com/MMk8VgM.jpg>
