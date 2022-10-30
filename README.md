@@ -196,4 +196,5 @@
 	1) 200 – ok, модель Менеджер
 	2) 404 – notFound
 	3) 401 – unauthorized
+### Диаграмма базы данных
 <img src = https://user-images.githubusercontent.com/116554810/198907290-4903c052-60bc-4ed9-bcca-068e25209c54.png>
