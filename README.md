@@ -200,5 +200,19 @@ PUT api/Rooms/{Id_Room:int32}; login, password, need authorization with manager 
 200 – OK
 404 – notFound
 401 – unauthorized
-
+#### Удаление Отеля:
+##### Delete api/Hotels/{ID_Hotel:int32}; требуется авторизация в роли менеджера
+ 1. 204 – noContent
+ 2. 404 – notFound
+ 3. 401 - unauthorized
+ #### Удаление Номеров:
+##### Delete api/Rooms/{ID_Room:int32}; требуется авторизация в роли менеджера
+ 1. 204 – noContent
+ 2. 404 – notFound
+ 3. 401 - unauthorized
+#### Просмотр Номеров:
+##### Get api/Rooms/{Id_Room:int32};требуется авторизация в роли менеджера
+ 1. 200 – ok, модель Менеджер
+ 2. 404 – notFound
+ 3. 401 – unauthorized
 <img src = https://i.imgur.com/MMk8VgM.jpg>
