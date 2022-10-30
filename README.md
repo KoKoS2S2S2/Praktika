@@ -139,17 +139,17 @@
  3. 401 - unauthorized
 Работа с бронью
 Отмена брони:
-POST – api/products/{productId:int32}, need authorization with User role, Id_Room, ID_Client, Start_Day, End_Day;
+POST – api/Rooms/{Id_Room:int32}, need authorization with User role, Id_Room, ID_Client, Start_Day, End_Day;
 200 – OK
 404 – NotFound
 401 – Unauthorized
 Просмотр брони:
-POST – api/products/{productId:int32}, need authorization with User role, UserModel;
+POST – api/Rooms/{id_Room:int32}, need authorization with User role, UserModel;
 200 – OK
 404 – NotFound
 401 – Unauthorized
 Оформление брони
-POST – api/products/{productId:int32}, need authorization with User role, Id_Room, Start_Day, End_Day, Id_Hotel, Id_Client;
+POST – api/Rooms/{id_Room:int32}, need authorization with User role, Id_Room, Start_Day, End_Day, Id_Hotel, Id_Client;
 200 – OK
 404 – NotFound
 401 – Unauthorized
@@ -163,7 +163,7 @@ POST api/Hotels/Stars,  don’t need authorization;
 200 - OK, array of product model
 404 - NotFound
 Добавление отеля в избранное:
-POST api/Products/{productId:int32}, need authorization with user role;
+POST api/Hotels/{ID_Hotel:int32}, need authorization with user role;
 204 - noContent
 404 - NotFound
 401 – Unauthorized
