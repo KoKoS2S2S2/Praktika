@@ -135,5 +135,21 @@
  1. 204 – noContent
  2. 404 – notFound
  3. 401 - unauthorized
+Работа с бронью
+Отмена брони:
+POST – api/products/{productId:int32}, need authorization with User role, Id_Room, ID_Client, Start_Day, End_Day;
+200 – OK
+404 – NotFound
+401 – Unauthorized
+Просмотр брони:
+POST – api/products/{productId:int32}, need authorization with User role, UserModel;
+200 – OK
+404 – NotFound
+401 – Unauthorized
+Оформление брони
+POST – api/products/{productId:int32}, need authorization with User role, Id_Room, Start_Day, End_Day, Id_Hotel, Id_Client;
+200 – OK
+404 – NotFound
+401 – Unauthorized
 
 <img src = https://i.imgur.com/MMk8VgM.jpg>
