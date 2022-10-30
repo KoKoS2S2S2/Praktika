@@ -64,18 +64,20 @@
 
 #### 3. Hotel
 	1) Name
-	2) id_Hotel
-	3) Stars
-	4) Adress
-	5) Features
+	2) Images
+	3) id_Hotel
+	4) Stars
+	5) Adress
+	6) Features
 
 #### 4. Rooms
 	1) id_Room
 	2) id_Hotel
-	3) Bed
-	4) Eat
-	5) Free_cancel
-	6) Features
+	3) Images_Room
+	4) Bed
+	5) Eat
+	6) Free_cancel
+	7) Features
 
 #### 5. Managers
 	1) id_Hotel
@@ -83,7 +85,7 @@
 	3) Login
 	4) Password
 
-#### Для работы с пользователями
+### Для работы с пользователями
 
 	Endpoinds:
     
