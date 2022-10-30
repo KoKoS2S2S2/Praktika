@@ -11,6 +11,7 @@
 ### Свойства модуля 1: 
 #### Работа с Аккаунтом:
 	1) создание аккаунта;
+
 	2) вход в аккаунт;
 	3) просмотр аккаунта;
 	4) изменение данных аккаунта;
@@ -116,21 +117,21 @@
  1. 201 – Created, модель User
  2. 406 - notAcceptable
 #### Вход в аккаунт:
-##### POST api/clients/authorization; login, password
+##### POST api/clients/authorization; login, password, firstname,surname, citizenship, birthday, email;
  1. 200 – Ok, модель User
  2. 404 – notFound
 #### Просмотр аккаунта:
-##### Get api/clients/{ID:int32}; need authorization with user role;
+##### Get api/clients/{ID:int32};требуется авторизация в роли пользователя
  1. 200 – ok, модель User
  2. 404 – notFound
  3. 401 – unauthorized
 #### Изменение данных аккаунта:
-##### PUT api/clients/{ID:int32}; login, password, firstname,surname, citizenship, birthday, email; need authorization with user role;
+##### PUT api/clients/{ID:int32}; login, password, firstname,surname, citizenship, birthday, email; nтребуется авторизация в роли пользователя
  1. 200 – OK, модель User
  2. 404 – notFound
  3. 401 – unauthorized
 #### Удаление Аккаунта:
-##### Delete api/clients/{ID:int32}; need authorization with user role
+##### Delete api/clients/{ID:int32}; требуется авторизация в роли пользователя
  1. 204 – noContent
  2. 404 – notFound
  3. 401 - unauthorized
