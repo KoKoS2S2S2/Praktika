@@ -95,105 +95,105 @@
 	5) Password
 	
 ### Работа с аккаунтом:
-#### Создание Аккаунта:
-##### PUT api/clients/registration; login, password, firstname,surname, citizenship, birthday, email;
- 1. 201 – Created, модель User
- 2. 406 - notAcceptable
-#### Вход в аккаунт:
-##### POST api/clients/authorization; login, password, firstname,surname, citizenship, birthday, email;
- 1. 200 – Ok, модель User
- 2. 404 – notFound
-#### Просмотр аккаунта:
+#### Создание Аккаунта
+##### PUT api/clients/registration; login, password, firstname, surname, citizenship, birthday, email;
+	1. 201 – Created, модель User
+	2. 406 - notAcceptable
+#### Вход в аккаунт
+##### POST api/clients/authorization; login, password, firstname, surname, citizenship, birthday, email;
+	1. 200 – Ok, модель User
+	2. 404 – notFound
+#### Просмотр аккаунта
 ##### Get api/clients/{ID:int32};требуется авторизация в роли пользователя
- 1. 200 – ok, модель User
- 2. 404 – notFound
- 3. 401 – unauthorized
-#### Изменение данных аккаунта:
+	1. 200 – ok, модель User
+	2. 404 – notFound
+	3. 401 – unauthorized
+#### Изменение данных аккаунта
 ##### PUT api/clients/{ID:int32}; login, password, firstname,surname, citizenship, birthday, email; nтребуется авторизация в роли пользователя
- 1. 200 – OK, модель User
- 2. 404 – notFound
- 3. 401 – unauthorized
-#### Удаление Аккаунта:
+	1. 200 – OK, модель User
+	2. 404 – notFound
+	3. 401 – unauthorized
+#### Удаление Аккаунта
 ##### Delete api/clients/{ID:int32}; требуется авторизация в роли пользователя
- 1. 204 – noContent
- 2. 404 – notFound
- 3. 401 - unauthorized
-Работа с бронью
-Отмена брони:
-POST – api/Rooms/{Id_Room:int32}, need authorization with User role, Id_Room, ID_Client, Start_Day, End_Day;
-200 – OK
-404 – NotFound
-401 – Unauthorized
-Просмотр брони:
-POST – api/Rooms/{id_Room:int32}, need authorization with User role, UserModel;
-200 – OK
-404 – NotFound
-401 – Unauthorized
-Оформление брони
-POST – api/Rooms/{id_Room:int32}, need authorization with User role, Id_Room, Start_Day, End_Day, Id_Hotel, Id_Client;
-200 – OK
-404 – NotFound
-401 – Unauthorized
-
-Просмотр отелей: 
-Get api/Hotels, don’t need authorization;
-200 - OK, array of product model
-404 - NotFound
-Просмотр отелей с фильтрацией:
-POST api/Hotels/Price,  don’t need authorization;
-200 - OK, array of product model
-404 - NotFound
-Добавление отеля в избранное:
-POST api/Hotels/{ID_Hotel:int32}, need authorization with user role;
-204 - noContent
-404 - NotFound
-401 – Unauthorized
-#### Создание Аккаунта(менеджер):
+	1. 204 – noContent
+	2. 404 – notFound
+	3. 401 - unauthorized
+### Работа с бронью:
+#### Отмена брони
+##### POST – api/Rooms/{Id_Room:int32}, need authorization with User role, Id_Room, ID_Client, Start_Day, End_Day;
+	1. 200 – OK
+	2. 404 – NotFound
+	3. 401 – Unauthorized
+#### Просмотр брони
+##### POST – api/Rooms/{id_Room:int32}, need authorization with User role, UserModel;
+	1. 200 – OK
+	2. 404 – NotFound
+	3. 401 – Unauthorized
+#### Оформление брони
+##### POST – api/Rooms/{id_Room:int32}, need authorization with User role, Id_Room, Start_Day, End_Day, Id_Hotel, Id_Client;
+	1. 200 – OK
+	2. 404 – NotFound
+	3. 401 – Unauthorized
+#### Просмотр отелей
+##### Get api/Hotels, don’t need authorization;
+	1. 200 - OK, array of product model
+	2. 404 - NotFound
+#### Просмотр отелей с фильтрацией
+##### POST api/Hotels/Price,  don’t need authorization;
+	1. 200 - OK, array of product model
+	2. 404 - NotFound
+#### Добавление отеля в избранное
+##### POST api/Hotels/{ID_Hotel:int32}, need authorization with user role;
+	1. 204 - noContent
+	2. 404 - NotFound
+	3. 401 – Unauthorized
+### Работа с аккаунтом (менеджер):
+#### Создание Аккаунта(менеджер)
 ##### PUT api/managers/registration; login, password;
- 1. 201 – Created, модель User
- 2. 406 - notAcceptable
-#### Вход в аккаунт:
+	1. 201 – Created, модель User
+	2. 406 - notAcceptable
+#### Вход в аккаунт
 ##### POST api/managers/authorization; login, password;
- 1. 200 – Ok, модель User
- 2. 404 – notFound
-#### Просмотр аккаунта:
+	1. 200 – Ok, модель User
+	2. 404 – notFound
+#### Просмотр аккаунта
 ##### Get api/managers/{ID:int32};требуется авторизация в роли менеджера
- 1. 200 – ok, модель Manager
- 2. 404 – notFound
- 3. 401 – unauthorized
-#### Изменение данных аккаунта:
-##### PUT api/managers/{ID:int32}; login, password; nтребуется авторизация в роли пользователя
- 1. 200 – OK, модель User
- 2. 404 – notFound
- 3. 401 – unauthorized
-#### Удаление Аккаунта:
-##### Delete api/managers/{ID:int32}; требуется авторизация в роли Менеджера
- 1. 204 – noContent
- 2. 404 – notFound
- 3. 401 - unauthorized
-Добавление отеля:
-POST api/Hotels/{id_Hotel:int32}, need authorization with manager role;
-204 - noContent
-404 - NotFound
-401 – Unauthorized
-Редактирование данных о номерах:
-PUT api/Rooms/{Id_Room:int32}; login, password, need authorization with manager role;
-200 – OK
-404 – notFound
-401 – unauthorized
-#### Удаление Отеля:
+	1. 200 – ok, модель Manager
+	2. 404 – notFound
+	3. 401 – unauthorized
+#### Изменение данных аккаунта
+##### PUT api/managers/{ID:int32}; login, password; nтребуется авторизация в роли менеджера
+	1. 200 – OK, модель User
+	2. 404 – notFound
+	3. 401 – unauthorized
+#### Удаление Аккаунта
+##### Delete api/managers/{ID:int32}; требуется авторизация в роли менеджера
+	1. 204 – noContent
+	2. 404 – notFound
+	3. 401 - unauthorized
+#### Добавление отеля
+##### POST api/Hotels/{id_Hotel:int32}, требуется авторизация в роли менеджера
+	1. 204 - noContent
+	2. 404 - NotFound
+	3. 401 – Unauthorized
+#### Редактирование данных о номерах
+##### PUT api/Rooms/{Id_Room:int32}; login, password, требуется авторизация в роли менеджера
+	1. 200 – OK
+	2. 404 – notFound
+	3. 401 – unauthorized
+#### Удаление Отеля
 ##### Delete api/Hotels/{ID_Hotel:int32}; требуется авторизация в роли менеджера
- 1. 204 – noContent
- 2. 404 – notFound
- 3. 401 - unauthorized
- #### Удаление Номеров:
+	1. 204 – noContent
+	2. 404 – notFound
+	3. 401 - unauthorized
+ #### Удаление Номеров
 ##### Delete api/Rooms/{ID_Room:int32}; требуется авторизация в роли менеджера
- 1. 204 – noContent
- 2. 404 – notFound
- 3. 401 - unauthorized
-#### Просмотр Номеров:
+	1. 204 – noContent
+	2. 404 – notFound
+	3. 401 - unauthorized
+#### Просмотр Номеров
 ##### Get api/Rooms/{Id_Room:int32};требуется авторизация в роли менеджера
- 1. 200 – ok, модель Менеджер
- 2. 404 – notFound
- 3. 401 – unauthorized
+	1. 200 – ok, модель Менеджер
+	2. 404 – notFound
+	3. 401 – unauthorized
 <img src = https://user-images.githubusercontent.com/116554810/198907290-4903c052-60bc-4ed9-bcca-068e25209c54.png>
