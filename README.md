@@ -45,7 +45,7 @@
 
 Модули api будут использовать 3 модели для общения:
 	Clients
-Id
+Id_Client
 Firstname
 Surname
 citizenship
