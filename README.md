@@ -190,4 +190,15 @@ POST api/Hotels/{ID_Hotel:int32}, need authorization with user role;
  1. 204 – noContent
  2. 404 – notFound
  3. 401 - unauthorized
+Добавление отеля:
+POST api/Hotels/{id_Hotel:int32}, need authorization with manager role;
+204 - noContent
+404 - NotFound
+401 – Unauthorized
+Редактирование данных о номерах:
+PUT api/Rooms/{Id_Room:int32}; login, password, need authorization with manager role;
+200 – OK
+404 – notFound
+401 – unauthorized
+
 <img src = https://i.imgur.com/MMk8VgM.jpg>
