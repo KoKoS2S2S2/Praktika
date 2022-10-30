@@ -109,4 +109,4 @@
 		3.POST запрос для регистрации нового отеля.
 		4.DELETE запрос – удаление отеля.
 		5.PUT запрос для изменения данных отеля.
-<img href = https://i.imgur.com/MMk8VgM.jpg>
+<img src = https://i.imgur.com/MMk8VgM.jpg>
