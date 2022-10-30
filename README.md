@@ -112,6 +112,5 @@
 		5.PUT запрос для изменения данных отеля.
 		
 <img src = https://i.imgur.com/MMk8VgM.jpg>
-<img src = https://user-images.githubusercontent.com/116554810/198905347-3ef8e5ad-2376-4bee-9518-3ad4fedadcd7.jpg>
 
 
