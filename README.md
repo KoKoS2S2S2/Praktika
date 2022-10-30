@@ -111,6 +111,29 @@
 		4.DELETE запрос – удаление отеля.
 		5.PUT запрос для изменения данных отеля.
 		
+Работа с аккаунтом:
+Создание Аккаунта:
+PUT api/clients/registration; login, password, firstname,surname, citizenship, birthday, email;
+201 – Created, модель User
+406 - notAcceptable
+Вход в аккаунт:
+POST api/clients/authorization; login, password
+200 – Ok, модель User
+404 – notFound
+Просмотр аккаунта:
+Get api/clients/{ID:int32}; need authorization with user role;
+200 – ok, модель User
+404 – notFound
+401 – unauthorized
+Изменение данных аккаунта:
+PUT api/clients/{ID:int32}; login, password, firstname,surname, citizenship, birthday, email; need authorization with user role;
+200 – OK, модель User
+404 – notFound
+401 – unauthorized
+Удаление Аккаунта:
+Delete api/clients/{ID:int32}; need authorization with user role
+204 – noContent
+404 – notFound
+401 - unauthorized
+
 <img src = https://i.imgur.com/MMk8VgM.jpg>
-
-
