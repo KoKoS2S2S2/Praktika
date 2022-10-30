@@ -85,10 +85,11 @@
 	7) Features
 
 #### 5. Managers
-	1) id_Hotel
-	2) Name
-	3) Login
-	4) Password
+	1) id_Managers
+	2) id_Hotel
+	3) Name
+	4) Login
+	5) Password
 
 ### Для работы с пользователями
 
@@ -108,28 +109,3 @@
 		3.POST запрос для регистрации нового отеля.
 		4.DELETE запрос – удаление отеля.
 		5.PUT запрос для изменения данных отеля.
-
-Создание Аккаунта:
-		PUT api/clients/registration; login, password, firstname, surname, citizenship, Birthday, Email;
-	201 – Created, модель User
-	406 - notAcceptable
-	Вход в аккаунт:
-	POST api/clients/authorization; login, password
-	200 – Ok, модель User
-	404 – notFound
-Просмотр аккаунта:
-	Get api/clients/{ID:int32}; need authorization with user role;
-	200 – ok, модель User
-	404 – notFound
-	401 – unauthorized
-Изменение данных аккаунта:
-PUT api/clients/{ID:int32}; login, password, firstname, surname, citizenship, Birthday, Email; need authorization with user role;
-	200 – OK, модель User
-	404 – notFound
-	401 – unauthorized
-Удаление Аккаунта:
-Delete api/clients/{ID:int32}; need authorization with user role
-	204 – noContent
-	404 – notFound
-	401 - unauthorized
-	
