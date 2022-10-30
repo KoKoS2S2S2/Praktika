@@ -43,6 +43,57 @@
 
 ## Определение API и Endpoint
 
+Модули api будут использовать 3 модели для общения:
+	Clients
+Id
+Firstname
+Surname
+citizenship
+Login
+Password
+Birtday
+
+
+
+
+Orders
+Order_ID
+Start_Day
+End_Day
+Id_Client
+Id_Hotel
+Id_Room
+
+
+
+Hotel
+Name
+id_Hotel
+stars
+Adress
+features
+
+
+
+
+
+
+
+Rooms
+Id_Room
+id_Hotel
+Bed
+Eat
+free_cancel
+features
+
+
+managers
+id Hotel
+Name
+Login
+Password
+
 #### Для работы с пользователями
 
 	Endpoinds:
