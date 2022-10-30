@@ -158,8 +158,8 @@ POST – api/Rooms/{id_Room:int32}, need authorization with User role, Id_Room, 
 Get api/Hotels, don’t need authorization;
 200 - OK, array of product model
 404 - NotFound
-Просмотр товаров с фильтрацией:
-POST api/Hotels/Stars,  don’t need authorization;
+Просмотр отелей с фильтрацией:
+POST api/Hotels/Price,  don’t need authorization;
 200 - OK, array of product model
 404 - NotFound
 Добавление отеля в избранное:
