@@ -23,10 +23,8 @@
 
 ### Свойства модуля 2: 
 #### Работа с отелями(В роли клиента):
-	1) Поиск отелей
 	2) Фильтрация поиска
 	3) Просмотр отелей
-	4) Возможность оставить отзыв 
 	5) Добавление отеля в избранное
 ### Свойства модуля 3(менеджер):
 #### Работа с аккаунтом:
@@ -154,6 +152,20 @@ POST – api/products/{productId:int32}, need authorization with User role, User
 POST – api/products/{productId:int32}, need authorization with User role, Id_Room, Start_Day, End_Day, Id_Hotel, Id_Client;
 200 – OK
 404 – NotFound
+401 – Unauthorized
+
+Просмотр отелей: 
+Get api/Hotels, don’t need authorization;
+200 - OK, array of product model
+404 - NotFound
+Просмотр товаров с фильтрацией:
+POST api/Hotels/Stars,  don’t need authorization;
+200 - OK, array of product model
+404 - NotFound
+Добавление отеля в избранное:
+POST api/Products/{productId:int32}, need authorization with user role;
+204 - noContent
+404 - NotFound
 401 – Unauthorized
 
 <img src = https://i.imgur.com/MMk8VgM.jpg>
