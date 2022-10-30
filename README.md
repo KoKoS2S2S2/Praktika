@@ -215,4 +215,4 @@ PUT api/Rooms/{Id_Room:int32}; login, password, need authorization with manager 
  1. 200 – ok, модель Менеджер
  2. 404 – notFound
  3. 401 – unauthorized
-<img src = https://i.imgur.com/MMk8VgM.jpg>
+<img src = https://user-images.githubusercontent.com/116554810/198907290-4903c052-60bc-4ed9-bcca-068e25209c54.png>
