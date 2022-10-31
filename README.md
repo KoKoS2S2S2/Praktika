@@ -86,6 +86,8 @@
 	5) Eat
 	6) Free_cancel
 	7) Features
+	8) Price
+	
 
 #### 5. Managers
 	1) id_Managers
@@ -93,6 +95,7 @@
 	3) Name
 	4) Login
 	5) Password
+	
 	
 ### Работа с аккаунтом:
 #### Создание Аккаунта
