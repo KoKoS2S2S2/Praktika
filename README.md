@@ -111,6 +111,11 @@ Spark является очень популярным инструментом 
 ## Определение API и Endpoint
 
 ### Модули api будут использовать 5 моделей для общения:
+#### 0. Users
+	1)Users_id
+	2)Login
+	3)Password
+	
 #### 1. Clients
 	1) id_Client
 	2) Firstname
@@ -146,16 +151,7 @@ Spark является очень популярным инструментом 
 	6) Free_cancel
 	7) Features
 	8) Price
-	
-
-#### 5. Managers
-	1) id_Managers
-	2) id_Hotel
-	3) Name
-	4) Login
-	5) Password
-	
-	
+		
 ### Работа с аккаунтом:
 #### Создание Аккаунта
 ##### PUT api/clients/registration; login, password, firstname, surname, citizenship, birthday, email;
