@@ -195,4 +195,5 @@ Spark является очень популярным инструментом 
 	2) 404 – notFound
 
 ### Диаграмма базы данных
-<img src = https://user-images.githubusercontent.com/116554810/198907290-4903c052-60bc-4ed9-bcca-068e25209c54.png>
+<img src = https://user-images.githubusercontent.com/116554810/200197410-88f8ec1d-e6aa-43af-a698-1350368a0105.png>
+
