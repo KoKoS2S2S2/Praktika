@@ -110,10 +110,8 @@ Spark является очень популярным инструментом 
 	2) Firstname
 	3) Surname
 	4) Citizenship
-	5) Login
-	6) Password
-	7) Birtday
-	8) Email
+	5) Birtday
+	6) Email
 
 #### 2. Orders
 	1) Order_ID
