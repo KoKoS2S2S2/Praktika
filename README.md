@@ -10,11 +10,10 @@
 ## Свойства модулей
 ### Свойства модуля 1: 
 #### Работа с Аккаунтом:
-	1) создание аккаунта;
-	2) вход в аккаунт;
-	3) просмотр аккаунта;
-	4) изменение данных аккаунта;
-	5) удаление аккаунта;
+	1) просмотр аккаунта;
+	2) изменение данных аккаунта;
+	3) удаление аккаунта;
+
 #### Работа с бронью:
 	1) Просмотр бронирования клиента;
 	2) Отмена брони;
@@ -27,7 +26,9 @@
 	2) Просмотр отелей
 	3) Добавление отеля в избранное
 ### Свойство модуля 3:
-	1)Регистрация
+	1) Регистрация
+### Свойство модуля 4:
+	1) Вход
 	
     
 ## Достоинства Sql Server
@@ -142,14 +143,6 @@ Spark является очень популярным инструментом 
 	9) Reviews
 		
 ### Работа с аккаунтом:
-#### Создание Аккаунта
-##### PUT api/clients/registration; login, password, firstname, surname, citizenship, birthday, email;
-	1) 201 – Created, модель User
-	2) 406 - notAcceptable
-#### Вход в аккаунт
-##### POST api/clients/authorization; login, password, firstname, surname, citizenship, birthday, email;
-	1) 200 – Ok, модель User
-	2) 404 – notFound
 #### Просмотр аккаунта
 ##### Get api/clients/{ID:int32};требуется авторизация в роли пользователя
 	1) 200 – ok, модель User
@@ -186,7 +179,7 @@ Spark является очень популярным инструментом 
 	1) 200 - OK, array of product model
 	2) 404 - NotFound
 #### Просмотр отелей с фильтрацией
-##### POST api/Hotels/Price,  don’t need authorization;
+##### POST api/Hotels/Price, don’t need authorization;
 	1) 200 - OK, array of product model
 	2) 404 - NotFound
 #### Добавление отеля в избранное
@@ -194,6 +187,14 @@ Spark является очень популярным инструментом 
 	1) 204 - noContent
 	2) 404 - NotFound
 	3) 401 – Unauthorized
+#### Создание Аккаунта
+##### POST api/clients/registration; login, password, firstname, surname, citizenship, birthday, email;
+	1) 201 – Created, модель User
+	2) 406 - notAcceptable
+#### Вход в аккаунт
+##### POST api/clients/authorization; login, password, firstname, surname, citizenship, birthday, email;
+	1) 200 – Ok, модель User
+	2) 404 – notFound
 
 ### Диаграмма базы данных
 <img src = https://user-images.githubusercontent.com/116554810/198907290-4903c052-60bc-4ed9-bcca-068e25209c54.png>
