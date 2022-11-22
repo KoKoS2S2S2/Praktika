@@ -19,4 +19,8 @@
     <Folder Include="View\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\boking.BLL\boking.BLL.csproj" />
+  </ItemGroup>
+
 </Project>
