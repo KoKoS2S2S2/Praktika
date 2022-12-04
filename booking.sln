@@ -5,11 +5,11 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "booking", "booking\booking.csproj", "{EF035C29-AE12-4F96-BEE6-80BF7DE5F8BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "booking.Infrastructure", "booking.BLL\booking.Infrastructure.csproj", "{C10E0D3C-11E9-46CE-A039-1AD51C85D3A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "booking.Infrastructure", "booking.BLL\booking.Infrastructure.csproj", "{C10E0D3C-11E9-46CE-A039-1AD51C85D3A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "booking.Common", "booking.Common\booking.Common.csproj", "{26E98241-1F76-4A18-BDE2-E2A18EE89C56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "booking.Common", "booking.Common\booking.Common.csproj", "{26E98241-1F76-4A18-BDE2-E2A18EE89C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boking.BLL", "boking.BLL\boking.BLL.csproj", "{B99B4A94-5C37-402A-B77E-437FAB9388AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "boking.BLL", "boking.BLL\boking.BLL.csproj", "{B99B4A94-5C37-402A-B77E-437FAB9388AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

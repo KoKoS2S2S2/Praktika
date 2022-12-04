@@ -15,4 +15,5 @@ namespace booking.Infrastructure.Reposytory.Interfacies
 
         public Hotel UpdateHotel(Hotel hotel);
     }
+    
 }
